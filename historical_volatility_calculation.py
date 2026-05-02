@@ -11,6 +11,5 @@ def historical_volatility(name='^NSEI',period_='1y'):
   sigma_daily=np.std(log_returns,ddof=1)
   sigma_annually=sigma_daily*(252)**(0.5)
   return sigma_annually
-print(historical_volatility())
 
 
